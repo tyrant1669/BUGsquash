@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUGsquash Coding Challenge</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0f172a, #111827);
+      color: #e5e7eb;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #3ef4c2;
+      text-shadow: 0 0 15px #3ef4c2;
+    }
+
+    header h2 {
+      color: #8be9fd;
+      margin-top: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 800px;
+      background: #1f2937;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h3 {
+      color: #3ef4c2;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #3ef4c2;
+      display: inline-block;
+    }
+
+    .event-details {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    label {
+      font-weight: 500;
+      color: #8be9fd;
+    }
+
+    input, select {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background-color: #111827;
+      color: #e5e7eb;
+      font-size: 1rem;
+      width: 100%;
+      transition: 0.2s ease;
+    }
+
+    input:focus, select:focus {
+      border: 1px solid #3ef4c2;
+      box-shadow: 0 0 10px #3ef4c2;
+    }
+
+    button {
+      padding: 12px;
+      background: #3ef4c2;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #2ec0a4;
+      box-shadow: 0 0 15px #3ef4c2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    .sub-section {
+      margin-top: 1.5rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #3ef4c2;
+      margin: 1.5rem 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BUGsquash Coding Challenge</h1>
+    <h2>Organized by Department of CSE<br>Adhiparasakthi Engineering College</h2>
+    <p>In association with Computer Society of India – Student Chapter</p>
+  </header>
+
+  <section>
+    <div class="event-details">
+      <h3>Event Details</h3>
+      <p><strong>Date:</strong> 04 OCT 2025</p>
+      <p><strong>Time:</strong> 9:30 AM</p>
+      <p><strong>Venue:</strong> Main CSE Lab</p>
+      <p><strong>Languages:</strong> Java, Python</p>
+      <p><strong>Team Size:</strong> 2 Members per team</p>
+    </div>
+
+    <hr>
+
+    <form action="https://getform.io/f/bxoznoga" method="POST">
+      <h3>Team Details</h3>
+
+      <label for="team-name">Team Name</label>
+      <input type="text" id="team-name" name="Team Name" required>
+
+      <label for="department">Department</label>
+      <input type="text" id="department" name="Department" required>
+
+      <label for="year">Year</label>
+      <select id="year" name="Year" required>
+        <option value="">Select Year</option>
+        <option value="III Year">III Year</option>
+        <option value="IV Year">IV Year</option>
+      </select>
+
+      <div class="sub-section">
+        <h3>Team Member 1 Details</h3>
+        <label for="m1-name">Name</label>
+        <input type="text" id="m1-name" name="Member 1 Name" required>
+
+        <label for="m1-email">Email</label>
+        <input type="email" id="m1-email" name="Member 1 Email" required>
+
+        <label for="m1-phone">Phone No</label>
+        <input type="tel" id="m1-phone" name="Member 1 Phone" pattern="[0-9]{10}" required>
+      </div>
+
+      <div class="sub-section">
+        <h3>Team Member 2 Details</h3>
+        <label for="m2-name">Name</label>
+        <input type="text" id="m2-name" name="Member 2 Name" required>
+
+        <label for="m2-email">Email</label>
+        <input type="email" id="m2-email" name="Member 2 Email" required>
+
+        <label for="m2-phone">Phone No</label>
+        <input type="tel" id="m2-phone" name="Member 2 Phone" pattern="[0-9]{10}" required>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact: Sujji S (95977 66864) | Gopika V (98855 87194)</p>
+    <p>Staff Coordinators: Mr. Chairmadurai AP/CSE | Mrs. Thamaraiselvi AP/CSE</p>
+  </footer>
+
+</body>
+</html>
